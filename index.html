@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reliant India Group</title>
+
+  <!-- Global stylesheet -->
+  <link rel="stylesheet" href="../Css/styles.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="top">
+    <!-- Website Logo -->
+    <img class="website-logo" src="../Media/new_logo.png" alt="Reliant India Group Logo">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <a href="">Home</a>
+      <a href="">Manpower</a>
+      <a href="">Finance</a>
+      <a href="">Home Tuition</a>
+      <a href="">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO / INTRO SECTION ================= -->
+  <main class="main">
+    <h1 class="intro">
+      Empowering Growth Through Finance, Education & Careers
+    </h1>
+    <p class="intro2">
+      At <strong>Reliant India Group</strong>, we deliver trusted solutions in
+      <strong>Tax Consultancy</strong>, <strong>Home Tutoring</strong>, and
+      <strong>Manpower Services</strong> helping individuals and businesses achieve their goals.
+    </p>
+
+    <!-- CTA Button linking to enquiry section -->
+    <a href="#inquiry" class="btn">Enquire Now</a>
+  </main>
+
+  <!-- ================= ABOUT US ================= -->
+  <section class="about">
+    <h2 class="aboutus">About Us</h2>
+    <p>
+      Established in 2021, Reliant India Group has grown into a diversified service provider dedicated to
+      empowering individuals, families, and businesses.
+      Our mission is to deliver transparent guidance, quality learning, and dependable opportunities
+      under one roof, enabling our clients to achieve sustainable growth and long-term success.
+      At Reliant India Group, we believe in building trust, creating value, and transforming aspirations into achievements.
+    </p>
+  </section>
+
+  <!-- ================= SERVICES SECTION (COMMENTED OUT FOR NOW) ================= -->
+  <!-- 
+  <section class="services-section">
+    <h3 class="services">Our Services</h3>
+
+    <div class="finance">
+      <img src="../Media/tax.jpg" alt="Finance Service">
+      <p>Finance & Taxation</p>
+      <ul>
+        <li><img class="tax" src="tax.png" alt=""> Tax Consultancy & GST Filing</li>
+        <li><img class="account" src="accounting.png" alt=""> Accounting & Bookkeeping</li>
+        <li><img class="finance" src="financial-growth-analysis.png" alt=""> Financial Advisory</li>
+        <li><img class="company" src="company.png" alt=""> Company Registration & Compliance</li>
+      </ul>
+    </div>
+
+    <div class="tutoring">
+      <img src="../Media/tution.jpg" alt="Tutoring Service">
+      <p>Home Tutoring</p>
+      <ul>
+        <li><img class="tutor" src="tutor.png" alt=""> Personalized Home Tuition (All Subjects)</li>
+        <li><img class="exam" src="exam.png" alt=""> Competitive Exam Preparation</li>
+        <li><img class="online" src="online.png" alt=""> Online & Offline Classes</li>
+      </ul>
+    </div>
+
+    <div class="manpower">
+      <img src="../Media/manpower.jpg" alt="Manpower Service">
+      <p>Manpower Consultancy</p>
+      <ul>
+        <li><img class="hire" src="hire.png" alt=""> Recruitment Solutions for Businesses</li>
+        <li><img class="jobs" src="jobs.png" alt=""> Job Placement Assistance</li>
+        <li><img class="career" src="career.png" alt=""> Career Guidance & Training</li>
+      </ul>
+    </div>
+
+    <label for="business">Select Service Category:</label><br>
+    <select name="business" id="business" required>
+      <option value="">--Choose--</option>
+      <option value="finance">Finance & Taxation</option>
+      <option value="tutoring">Tutoring Services</option>
+      <option value="manpower">Manpower Consultancy</option>
+    </select>
+  </section>
+  -->
+
+  <!-- ================= VISION / MISSION / VALUES ================= -->
+  <section class="visionary">
+
+    <!-- Vision -->
+    <div class="vision">
+      <img src="../Media/vision.png" alt="Vision Icon">
+      <h3 class="v">VISION</h3>
+      <p>
+        Our vision is to be recognized as a trusted multi-service organization that empowers individuals,
+        families, and businesses through transparent financial guidance, quality education, and reliable
+        career solutions — all under one roof.
+      </p>
+    </div>
+
+    <!-- Mission -->
+    <div class="mission">
+      <img src="../Media/mission.png" alt="Mission Icon">
+      <h3 class="v">MISSION</h3>
+      <p>
+        Our mission is to make essential services — finance, education, and career support — accessible,
+        affordable, and dependable for everyone.
+      </p>
+    </div>
+
+    <!-- Values -->
+    <div class="values">
+      <img src="../Media/values.png" alt="Values Icon">
+      <h3 class="v">VALUES</h3>
+      <p>
+        At Reliant India Group, our values guide everything we do. We uphold the highest standards of
+        <strong>integrity</strong>, strive for <strong>excellence</strong>, and follow a <strong>people-first approach</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION LINK ================= -->
+  <aside>
+    <a class="map" href="https://g.co/kgs/qkjPXmJ" target="_blank">
+      You can visit us here.
+    </a>
+  </aside>
+
+  <!-- ================= ENQUIRY FORM ================= -->
+  <form id="inquiry" action="#" method="post">
+    <h3>Your Enquiry</h3>
+
+    <!-- Service Dropdown -->
+    <label for="service">Specific Service:</label><br>
+    <select name="service" id="service" required>
+      <option value="">--Choose--</option>
+      <option value="tax">Tax / GST</option>
+      <option value="accounting">Accounting</option>
+      <option value="registration">Company Registration</option>
+      <option value="consulting">Financial Consulting</option>
+      <option value="tutoring">Tutoring</option>
+      <option value="jobs">Job Placement</option>
+      <option value="other">Other</option>
+    </select>
+
+    <!-- Name -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+
+    <!-- Mobile Number -->
+    <label for="contact">Mobile No.:</label><br>
+    <input type="tel" id="contact" name="contact" placeholder="10-digit number" pattern="[0-9]{10}" required><br>
+
+    <!-- Message -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea><br>
+
+    <!-- Referral Source -->
+    <label for="option">How did you hear about us?</label><br>
+    <select name="option" id="option" required>
+      <option value="Google">Google</option>
+      <option value="Youtube">YouTube</option>
+      <option value="Friend">From a Friend</option>
+      <option value="Facebook">Facebook</option>
+      <option value="Pamphlets">Pamphlets</option>
+      <option value="News">News</option>
+    </select>
+
+    <!-- Terms Checkbox -->
+    <input type="checkbox" id="Terms" name="Terms" required>
+    <label for="Terms">I agree to the Terms & Conditions</label>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <h3>Contact</h3>
+    <p>
+      Phone: +91 7766918963 <br>
+      Email: globalservicesforyou01@gmail.com <br>
+      Address: Raghopur Petrol Pump, Near IIT Bihta, Patna, Bihar - 801130 <br>
+      Website: www.globalservicesforyou.com
+    </p>
+  </footer>
+
+</body>
+</html>
