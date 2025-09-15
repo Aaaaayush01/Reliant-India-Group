@@ -1,59 +1,38 @@
-body {
-  font-family: 'Inter', 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0.5em;
-  color: #111;
-  font-weight: bold;
-}
-
-p {
-  margin-bottom: 1em;
-  color: #444;
-}
 
 /* ===== Hero Section ===== */
-.hero {
+.tution-hero {
     display: flex;
     justify-content: space-between;
 }
 
-.herotext{
-    padding-right: 120px;
+.tution-herotext{
+    line-height: 1.6;
+    font-size: 18px;
 }
 
-.hero-content {
-  background-image: url(../Media/tution.jpg);
+.tution-hero-content {
+  background-image: url(/Media/tution.jpg);
   background-size: cover;
   text-align: center;
-  width: 1200px;
+  width: 1350px;
   height: auto;
   border-radius: 0 0 2rem 2rem;
 }
 
-.hero h1 {
+.tution-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.tution-hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
 /* Reusable button style */
-.btn {
+.tution-btn {
   display: inline-block;
-  background: #ff7043;
+  background: greenyellow;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
@@ -63,22 +42,23 @@ p {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
-  color: #ff5722;
+.tution-btn:hover {
+  color: greenyellow;
   background-color: white;
   font-weight: bold;
 }
 
 /* ===== Section Layout ===== */
-section {
-  max-width: 1000px;
-  margin: 3rem auto;
+.tution-offerings, .tution-why-choose, .tution-process, .tution-cta {
+  margin-left: 64px;
+  line-height: 1.6;
+  font-size: 18px;
   padding: 0 1.5rem;
 }
 
 /* ===== Offerings & Why Choose Us ===== */
-.offerings ul,
-.why-choose ul {
+.tution-offerings ul,
+.tution-why-choose ul {
   list-style: none;
   padding: 0;
 }
@@ -108,20 +88,25 @@ section {
   margin: 0.5rem 0;
 }
 
-.button {
+.tution-btn2 {
   display: inline-block;
-  background: #ff7043;
+  background: greenyellow;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 500;
-  margin-top: 30px;
+  margin-top: 36px;
   transition: all 0.3s ease;
 }
 
-.button:hover {
-  color: #ff5722;
+.tution-btn2:hover {
+  color: greenyellow;
   background-color: white;
   font-weight: bold;
+}
+
+.tution2 {
+  display: flex;
+  justify-content: space-between;
 }

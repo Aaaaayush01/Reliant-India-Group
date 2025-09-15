@@ -1,53 +1,52 @@
-/* Hero */
-.hero--manpower {
-  background-image: url(../Media/light.jpg);
+.hero-manpower {
+  background-image: url(/Media/Techno\ Lines\ Simple\ Blue\ Background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #2c3e50;
   text-align: center;
   padding: 4rem 2rem;
   border-radius: 0 0 2rem 2rem;
 }
 
-.hero--manpower h1 {
+.hero-manpower h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero--manpower p {
+.hero-manpower p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
-.cta-buttons {
+.Hero-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.btn {
-  color:#1976d2 ;
+.E-btn {
+  color:#2c3e50 ;
   background-color: whitesmoke;
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   text-decoration: none;
 }
 
-.btn:hover {
+.E-btn:hover {
   background-color: #1976d2;
   color: whitesmoke;
   font-weight: bold;
 }
 
-.btn-alt {
+.J-btn {
   background-color: whitesmoke;
-  color: #1976d2;
+  color: #2c3e50;
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   text-decoration: none;
 }
-.btn-alt:hover {
+.J-btn:hover {
   background-color: #1976d2;
   color: whitesmoke;
   font-weight: bold;
@@ -66,14 +65,14 @@
 }
 
 /* Cards grid */
-.cards {
+.Cards {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1.25rem;
   margin: 2rem 0;
 }
 
-.card {
+.Card {
   grid-column: span 6;
   background: #fff;
   border: 1px solid #eee;
@@ -82,24 +81,24 @@
   box-shadow: 0 4px 14px rgba(0,0,0,0.05);
 }
 
-.card h3 {
+.Card h3 {
   margin-bottom: 0.75rem;
   font-size: 1.15rem;
 }
 
-.card ul {
+.Card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.card li {
+.Card li {
   margin: 0.5rem 0;
   padding-left: 1.25rem;
   position: relative;
   line-height: 1.6;
 }
-.card li::before {
+.Card li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -109,15 +108,55 @@
 }
 
 /* Process sections */
-.process ol {
-  padding-left: 1.25rem;
-}
-.process li {
-  margin: 0.5rem 0 0.75rem;
+.process  {
+  display: grid;
+  gap: 1.25rem;
+  margin: 2rem 0;
+  grid-column: span 6;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
+
 /* CTAs inside employers/jobseekers */
-.employers .cta, .jobseekers .cta {
+.employers, .jobseekers {
   text-align: center;
   margin-top: 2rem;
+}
+
+.Hire-btn {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  color:whitesmoke ;
+  background-color: #0d47a1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.Hire-btn:hover, .second-btn:hover {
+  background-color: whitesmoke;
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.second-btn {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  width: fit-content;
+  background-color: #0d47a1;
+  color: white;
+  margin: 0 auto;
 }
