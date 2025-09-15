@@ -76,13 +76,6 @@ section {
   padding: 0 1.5rem;
 }
 
-.service-overview,
-.offerings,
-.why-choose,
-.process {
-  margin-bottom: 4rem;
-}
-
 /* ===== Offerings & Why Choose Us ===== */
 .offerings ul,
 .why-choose ul {
