@@ -1,556 +1,910 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reliant India Group</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reliant India Group</title>
+    <!-- Global stylesheet -->
+    <link rel="stylesheet" href="Css/styles.css" />
+    <link rel="stylesheet" href="Css/manpower.css" />
+    <link rel="stylesheet" href="Css/tax.css" />
+    <link rel="stylesheet" href="Css/tution.css" />
+    <link rel="stylesheet" href="Css/tours.css">
+  </head>
 
-  <!-- Global stylesheet -->
-  <link rel="stylesheet" href="Css/styles.css" />
-  <link rel="stylesheet" href="Css/manpower.css" />
-  <link rel="stylesheet" href="Css/tax.css" />
-  <link rel="stylesheet" href="Css/tution.css" />
-</head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="main-head">
+      <!-- Logo -->
+      <a href="#HOME" class="logo">
+        <img src="/Media/new_logo.png" alt="Reliant India Group Logo" />
+      </a>
 
-<body>
-  <!-- ================= HEADER ================= -->
-  <header class="main-head">
-    <!-- Logo -->
-    <a href="#HOME" class="logo">
-      <img src="/Media/new_logo.png" alt="Reliant India Group Logo" />
-    </a>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#HOME">Home</a></li>
+          <li><a href="#ABOUT">About Us</a></li>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="#HOME">Home</a></li>
-        <li><a href="#ABOUT">About Us</a></li>
+          <!-- Dropdown -->
+          <li class="has-dropdown">
+            <a href="#SERVICES">Services ▾</a>
+            <ul class="dropdown">
+              <li><a href="#TAX">Tax & Accounting</a></li>
+              <li><a href="#MANPOWER">Manpower Consultancy</a></li>
+              <li><a href="#TUTION">Tuition Services</a></li>
+              <li><a href="#TOURS">Tours and Travels</a></li>
+            </ul>
+          </li>
+          <li><a href="#CONTACT" class="cta-nav">Contact Us</a></li>
+          <li class="phone-nav">
+            <a href="tel:+919263310103">📞 +91 9263310103</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- Dropdown -->
-        <li class="has-dropdown">
-          <a href="#SERVICES">Services ▾</a>
-          <ul class="dropdown">
-            <li><a href="#TAX">Tax & Accounting</a></li>
-            <li><a href="#MANPOWER">Manpower Consultancy</a></li>
-            <li><a href="#TUTION">Tuition Services</a></li>
+    <!-- ================= HERO / INTRO SECTION ================= -->
+    <div id="HOME" class="superrdiv">
+      <main class="Main-intro">
+        <h1 class="intro">
+          RELIANT INDIA GROUP
+        </h1>
+        <P class="intp">Reliability. Opportunity. Growth</P> 
+      </main>
+      <div class="services-container">
+        <!-- 🧾 Service Card 1 -->
+        <div class="card1">
+          <div class="icon">🧾</div>
+          <!-- Icon for quick visual -->
+          <h3>Tax Simplification</h3>
+          <ul>
+            <li>Income Tax Filing</li>
+            <li>GST Compliance</li>
+            <li>Bookkeeping & Payroll</li>
+            <li>Financial Statement Preparation</li>
           </ul>
-        </li>
-        <li><a href="#CONTACT" class="cta-nav">Contact Us</a></li>
-        <li class="phone-nav"><a href="tel:+919263310103">📞 +91 9263310103</a></li>
-      </ul>
-    </nav>
-  </header>
+          <div class="card-buttons">
+            <a href="#TAX" class="btn">Learn More</a>
+            <a href="#enquiry-section" class="btn2">Enquire Now</a>
+          </div>
+          <!-- Scrolls to detailed Tax section -->
+        </div>
 
-  <!-- ================= HERO / INTRO SECTION ================= -->
-  <div id="HOME" class="superrdiv">
-    <main class="Main-intro">
-      <h1 class="intro">
-        Simplifying Taxes, Connecting Talent, and Empowering Students to
-        Succeed
-      </h1>
+        <!-- 🤝 Service Card 2 -->
+        <div class="card2">
+          <div class="icon">🤝</div>
+          <h3>Manpower Solutions</h3>
+          <ul>
+            <li>Permanent Staffing</li>
+            <li>Contract Staffing</li>
+            <li>Leadership Hiring</li>
+            <li>Mass/Bulk Hiring</li>
+            <li>Payroll & compliance</li>
+          </ul>
+          <div class="card-buttons">
+            <a href="#MANPOWER" class="btn">Learn More</a>
+            <a href="#enquiry-section" class="btn2">Enquire Now</a>
+          </div>
+        </div>
 
+        <!-- 📚 Service Card 3 -->
+        <div class="card3">
+          <div class="icon">📚</div>
+          <h3>Student Tutoring</h3>
+          <ul>
+              <li>School-Level</li>
+              <li>Senior Secondary</li>
+              <li>Competitive & Olympiads</li>
+              <li>Skills & Languages</li>
+              <li>Special Learning Needs</li>
+            </ul>
+          <div class="card-buttons">
+            <a href="#TUTION" class="btn">Learn More</a>
+            <a href="#enquiry-section" class="btn2">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- ✈️ Service Card 4 -->
+        <div class="card4">
+          <div class="icon">✈️</div>
+          <h3>Tours & Travels</h3>
+          <ul>
+            <li>Explore Bihar’s Heritage</li>
+            <li>Customized Tour Packages</li>
+            <li>Group & Family Travel Solutions</li>
+          </ul>
+          <div class="card-buttons">
+            <a href="#TOURS" class="btn">Learn More</a>
+            <a href="#enquiry-section" class="btn2">Enquire Now</a>
+          </div>
+        </div>
+      </div>
       <!-- CTA Button linking to enquiry section -->
-      <div class="cta-12">
-        <a href="#enquiry-section" class="Main-btn">Book Free Consultation</a>
-      </div>
-    </main>
-    <div class="services-container">
-      <!-- 🧾 Service Card 1 -->
-      <div class="card1">
-        <div class="icon">🧾</div>
-        <!-- Icon for quick visual -->
-        <h3>Tax Simplification</h3>
-        <p>Stress-free tax filing with expert guidance.</p>
-        <a href="#TAX" class="btn">Learn More</a>
-        <!-- Scrolls to detailed Tax section -->
-      </div>
-
-      <!-- 🤝 Service Card 2 -->
-      <div class="card2">
-        <div class="icon">🤝</div>
-        <h3>Manpower Solutions</h3>
-        <p>Connecting businesses with the right talent.</p>
-        <a href="#MANPOWER" class="btn">Learn More</a>
-      </div>
-
-      <!-- 📚 Service Card 3 -->
-      <div class="card3">
-        <div class="icon">📚</div>
-        <h3>Student Tutoring</h3>
-        <p>Personalized learning support for students.</p>
-        <a href="#TUTION" class="btn">Learn More</a>
-      </div>
+        <div class="cta-12">
+          <a href="#enquiry-section" class="Main-btn">Book Free Consultation</a>
+        </div>
     </div>
-  </div>
 
-  <!-- ================= ABOUT US ================= -->
-  <section id="ABOUT" class="Main-about">
-    <h2 class="aboutus">About Us</h2>
-    <p>
-      Established in 2021, Reliant India Group has grown into a diversified
-      service provider dedicated to empowering individuals, families, and
-      businesses. Our mission is to deliver transparent guidance, quality
-      learning, and dependable opportunities under one roof, enabling our
-      clients to achieve sustainable growth and long-term success. At Reliant
-      India Group, we believe in building trust, creating value, and
-      transforming aspirations into achievements.
-    </p>
-  </section>
-  <!-- ================= VISION / MISSION / VALUES ================= -->
-  <section class="visionary">
-    <!-- Vision -->
-    <div class="vision">
-      <img src="/Media/vision-removebg-preview.png" alt="Vision Icon" />
+    <!-- ================= ABOUT US ================= -->
+    <section id="ABOUT" class="Main-about">
+      <h2 class="aboutus">About Us</h2>
       <p>
-        Our vision is to be the nation’s most trusted multi-service organization—empowering individuals, families, and
-        businesses with transparent financial guidance, world-class education, and dependable career solutions, all
-        delivered seamlessly under one roof.
+        Established in 2021, Reliant India Group has grown into a diversified
+        service provider dedicated to empowering individuals, families, and
+        businesses. Our mission is to deliver transparent guidance, quality
+        learning, and dependable opportunities under one roof, enabling our
+        clients to achieve sustainable growth and long-term success. At Reliant
+        India Group, we believe in building trust, creating value, and
+        transforming aspirations into achievements.
       </p>
-    </div>
-
-    <!-- Mission -->
-    <div class="mission">
-      <img src="/Media/mission-removebg-preview.png" alt="Mission Icon" />
-      <p>
-        Our mission is to break barriers by making finance, education, and career support universally accessible,
-        affordable, and reliable—empowering people to achieve sustainable growth and long-term success.
-      </p>
-    </div>
-
-    <!-- Values -->
-    <div class="values">
-      <img src="/Media/values-removebg-preview.png" alt="Values Icon" />
-      <p>
-        At Reliant India Group, our values define who we are. We uphold the highest standards of integrity, pursue
-        excellence in every service we deliver, and embrace a people-first approach that builds trust and lasting
-        relationships.
-      </p>
-    </div>
-  </section>
-
-  <!-- 🌟 Services Section -->
-
-  <div class="separate">
-    <blockquote id="quote-manpower" class="service-quote">
-      <p class="quote-text">
-        "Great vision without great people is irrelevant."
-      </p>
-      <footer class="quote-author">— Jim Collins</footer>
-    </blockquote>
-  </div>
-
-  <!-- MANPOWER CONSULTANCY PAGE -->
-  <section id="MANPOWER" class="hero-manpower">
-    <h1>Manpower Consultancy Services</h1>
-    <p>
-      Helping businesses hire right and professionals find the right
-      opportunities.
-    </p>
-    <div class="Hero-buttons">
-      <a href="#employers" class="E-btn">For Employers</a>
-      <a href="#jobseekers" class="J-btn">For Job Seekers</a>
-    </div>
-  </section>
-
-  <!-- EMPLOYER SECTION -->
-  <section id="employers" class="employers">
-    <h2>Solutions for Employers</h2>
-    <p>
-      We provide tailored staffing and HR solutions to help companies grow
-      with the right talent. From permanent recruitment to payroll
-      outsourcing, we simplify hiring so you can focus on business.
-    </p>
-
-    <div class="Cards">
-      <article class="Card">
-        <h3>Recruitment & Staffing</h3>
-        <ul>
-          <li>Permanent & Contract Staffing</li>
-          <li>Executive Search & Leadership Hiring</li>
-          <li>Mass/Bulk Hiring</li>
-        </ul>
-      </article>
-      <article class="Card">
-        <h3>HR & Payroll Outsourcing</h3>
-        <ul>
-          <li>Payroll & compliance (PF, ESIC, gratuity)</li>
-          <li>Leave & attendance management</li>
-          <li>HR process outsourcing</li>
-        </ul>
-      </article>
-      <article class="Card">
-        <h3>Industry-Specific Hiring</h3>
-        <ul>
-          <li>IT, Finance, Engineering, Manufacturing</li>
-          <li>Retail, FMCG, Hospitality</li>
-          <li>Healthcare & Pharma</li>
-        </ul>
-      </article>
-      <article class="Card">
-      <h3>Our Hiring Process</h3>
-      <ul>
-        <li>Requirement gathering</li>
-        <li>Candidate sourcing & screening</li>
-        <li>Shortlisting & interviews</li>
-        <li>Hiring & onboarding support</li>
-        <li>Post-placement follow-up</li>
-      </ul>
-    </article>
-    </div>
-
-    <div class="Hire">
-      <a href="#CONTACT" class="Hire-btn">Hire the Right Talent Today</a>
-    </div>
-  </section>
-  <hr />
-
-  <!-- JOB SEEKER SECTION -->
-  <section id="jobseekers" class="jobseekers">
-    <h2>Opportunities for Job Seekers</h2>
-    <p>
-      Whether you’re a fresher or an experienced professional, we connect you
-      with jobs that match your skills and career goals. Plus, we offer
-      training and support to boost employability.
-    </p>
-
-    <div class="Cards">
-      <article class="Card">
-        <h3>Job Placement</h3>
-        <ul>
-          <li>IT, Finance, Engineering, Retail, Healthcare</li>
-          <li>Domestic & international opportunities</li>
-          <li>Campus & fresher hiring</li>
-        </ul>
-      </article>
-      <article class="Card">
-        <h3>Career Support</h3>
-        <ul>
-          <li>Resume building</li>
-          <li>Interview preparation</li>
-          <li>Skill assessment & counseling</li>
-        </ul>
-      </article>
-      <article class="Card">
-        <h3>Training & Development</h3>
-        <ul>
-          <li>Soft skills & communication</li>
-          <li>Domain-specific training</li>
-          <li>Pre-job orientation</li>
-        </ul>
-      </article>
-      <article class="Card">
-      <h3>Your Journey with Us</h3>
-      <ul>
-        <li>Submit your resume</li>
-        <li>Screening & counseling</li>
-        <li>Skill alignment & training</li>
-        <li>Interview scheduling</li>
-        <li>Placement & post-hire support</li>
-      </ul>
-    </article>
-    </div>
-
-    <div class="Hire-btn2">
-      <h3>Get Placed with the Right Job</h3>
-      <a href="/contact" class="second-btn">Submit Resume</a>
-    </div>
-  </section>
-  <section class="Separate1">
-    <blockquote id="quote-tax" class="service-quote">
-      <p class="quote-text">
-        "In this world nothing can be said to be certain, except death and
-        taxes."
-      </p>
-      <footer class="quote-author">— Benjamin Franklin</footer>
-    </blockquote>
-  </section>
-
-  <!-- Tax and Accounts Section -->
-
-  <section id="TAX" class="Tax-hero">
-    <div class="tax-herotext">
-      <h1>Tax & Accounting Services</h1>
-      <p>
-        Reliable, transparent, and affordable solutions to keep your finances
-        stress-free.
-      </p>
-      <h2 class="overview">Overview</h2>
-      <p>
-        Managing taxes and accounting can be complex. Our expert team ensures
-        compliance, accuracy, and efficiency so you can focus on growing your
-        business.
-      </p>
-    </div>
-    <div class="tax-hero-content">
-      <a href="/contact" class="tax-btn">Book a Consultation</a>
-    </div>
-  </section>
-
-  <section class="tax-offerings">
-    <h2>Our Key Offerings</h2>
-    <ul>
-      <li>Income Tax Filing</li>
-      <li>GST Compliance</li>
-      <li>Bookkeeping & Payroll</li>
-      <li>Financial Statement Preparation</li>
-    </ul>
-  </section>
-
-  <section class="tax-why-choose">
-    <h2>Why Choose Us?</h2>
-    <p>
-      We combine experience, transparency, and technology to deliver top-class
-      financial services.
-    </p>
-    <ul>
-      <li>Accuracy & Compliance</li>
-      <li>Cost-Effective Solutions</li>
-      <li>Experienced Professionals</li>
-      <li>Transparent Communication</li>
-    </ul>
-  </section>
-
-  <section class="tax-process">
-    <h2>Our Process</h2>
-    <ol>
-      <li>Consultation</li>
-      <li>Documentation</li>
-      <li>Filing & Compliance</li>
-      <li>Ongoing Support</li>
-    </ol>
-  </section>
-  <div class="tax-submit">
-    <a href="/contact" class="tax-btn2">Book a Consultation</a>
-  </div>
-  <section class="separate2">
-    <blockquote id="quote-education" class="service-quote">
-      <p class="quote-text">
-        "Education is the most powerful weapon which you can use to change the
-        world."
-      </p>
-      <footer class="quote-author">— Nelson Mandela</footer>
-    </blockquote>
-  </section>
-
-  <!-- Tution Section -->
-  <section id="TUTION" class="tution-hero">
-    <div class="tution-herotext">
-      <h1>Home Tutoring Services</h1>
-      <p>
-        Personalized one-to-one learning for every class, every subject, at
-        your pace.
-      </p>
-      <h2>Overview</h2>
-      <p>
-        We connect students with experienced tutors for tailored learning at
-        home or online. From foundational skills to board exams and
-        competitive prep, we build confidence, clarity, and consistency with
-        structured lesson plans and regular progress tracking.
-      </p>
-    </div>
-    <div class="tution-hero-content">
-      <a href="/contact" class="tution-btn">Book a Consultation</a>
-    </div>
-  </section>
-
-  <div class="tution2">
-    <section class="tution-offerings">
-      <h2>What We Offer</h2>
-      <div class="tution-cards">
-        <article class="tution-card">
-          <h3>School-Level (Class 1–10)</h3>
-          <ul>
-            <li>Math, Science, English, Social Science</li>
-            <li>Homework & doubt clearing</li>
-            <li>Board exam preparation (CBSE/ICSE/State)</li>
-          </ul>
-        </article>
-        <article class="tution-card">
-          <h3>Senior Secondary (11–12)</h3>
-          <ul>
-            <li>PCM/PCB, Commerce, Humanities</li>
-            <li>Boards & unit tests</li>
-            <li>JEE/NEET foundation</li>
-          </ul>
-        </article>
-        <article class="tution-card">
-          <h3>Competitive & Olympiads</h3>
-          <ul>
-            <li>JEE/NEET basics, CUET</li>
-            <li>Math/Science Olympiad</li>
-            <li>Aptitude & reasoning</li>
-          </ul>
-        </article>
-        <article class="tution-card">
-          <h3>Skills & Languages</h3>
-          <ul>
-            <li>Spoken English & communication</li>
-            <li>Computer basics (MS Office, typing)</li>
-            <li>Coding for kids (Scratch/Python)</li>
-          </ul>
-        </article>
-        <article class="tution-card">
-          <h3>Special Learning Needs</h3>
-          <ul>
-            <li>Remedial & personalized pacing</li>
-            <li>Study plans & parent updates</li>
-            <li>One-on-one mentoring</li>
-          </ul>
-        </article>
-      </div>
     </section>
-
-    <section class="tution-why-choose">
-      <h2>Why Choose Our Tutoring?</h2>
-      <ul>
-        <li>Experienced, vetted tutors for each subject</li>
-        <li>Customized lesson plans & weekly reports</li>
-        <li>Flexible at-home or online sessions</li>
-        <li>Transparent pricing & easy scheduling</li>
-      </ul>
-    </section>
-
-    <section class="tution-process">
-      <h2>How It Works</h2>
-      <ol>
-        <li>
-          <strong>Assessment:</strong> Free evaluation to understand level &
-          goals
-        </li>
-        <li>
-          <strong>Match:</strong> We assign a tutor best suited to the student
-        </li>
-        <li>
-          <strong>Plan:</strong> Milestone-based study plan with schedule
-        </li>
-        <li>
-          <strong>Teach & Track:</strong> Regular classes + progress updates
-        </li>
-      </ol>
-    </section>
-  </div>
-
-  <section class="tution-cta">
-    <h2>Start a Free Trial Session</h2>
-    <p>Find the perfect tutor and see the difference in the first week.</p>
-    <a href="/contact" class="tution-btn2">Get Started</a>
-  </section>
-
-  <section id="enquiry-section">
-    <h2 class="enquiry-heading">Get in Touch</h2>
-    <p class="enquiry-subtext">
-      Fill out the form below and our team will get back to you shortly.
-    </p>
-
-    <form action="submit.php" method="POST" class="enquiry-form">
-      <!-- Personal Info -->
-      <div class="enquiry-group">
-        <label for="enquiry-name" class="enquiry-label">Full Name*</label>
-        <input type="text" id="enquiry-name" name="name" class="enquiry-input" required />
-      </div>
-
-      <div class="enquiry-group">
-        <label for="enquiry-email" class="enquiry-label">Email*</label>
-        <input type="email" id="enquiry-email" name="email" class="enquiry-input" required />
-      </div>
-
-      <div class="enquiry-group">
-        <label for="enquiry-phone" class="enquiry-label">Phone</label>
-        <input type="tel" id="enquiry-phone" name="phone" class="enquiry-input" placeholder="+91 98765 43210" />
-      </div>
-
-      <!-- Service Info -->
-      <div class="enquiry-group">
-        <label for="enquiry-service" class="enquiry-label">Service of Interest*</label>
-        <select id="enquiry-service" name="service" class="enquiry-select" required>
-          <option value="">-- Please Choose --</option>
-          <option value="tax">Tax & Accounting</option>
-          <option value="manpower">Manpower Consultancy</option>
-          <option value="tuition">Tuition Services</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-
-      <div class="enquiry-group">
-        <label for="enquiry-budget" class="enquiry-label">Budget (Optional)</label>
-        <input type="text" id="enquiry-budget" name="budget" class="enquiry-input" placeholder="e.g. ₹50,000" />
-      </div>
-
-      <div class="enquiry-group">
-        <label for="enquiry-timeline" class="enquiry-label">Timeline/Urgency</label>
-        <select id="enquiry-timeline" name="timeline" class="enquiry-select">
-          <option value="">-- Select --</option>
-          <option value="immediate">Immediate</option>
-          <option value="1-month">Within 1 Month</option>
-          <option value="3-months">Within 3 Months</option>
-          <option value="flexible">Flexible</option>
-        </select>
-      </div>
-
-      <!-- Message -->
-      <div class="enquiry-group">
-        <label for="enquiry-message" class="enquiry-label">Message</label>
-        <textarea id="enquiry-message" name="message" rows="5" class="enquiry-textarea"></textarea>
-      </div>
-
-      <!-- Consent -->
-      <div class="enquiry-group enquiry-consent">
-        <input type="checkbox" id="enquiry-consent" name="consent" required />
-        <label for="enquiry-consent">I agree to be contacted via email/phone.</label>
-      </div>
-
-      <!-- Submit -->
-      <button type="submit" class="enquiry-submit-btn">Submit Enquiry</button>
-    </form>
-  </section>
-
-  <!-- Footerrrrrrrrrrrrr -->
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- Company Info -->
-      <div class="footer-about">
-        <h3>Reliant India Group</h3>
+    <!-- ================= VISION / MISSION / VALUES ================= -->
+    <section class="visionary">
+      <!-- Vision -->
+      <div class="vision">
+        <img src="/Media/vision-removebg-preview.png" alt="Vision Icon" />
         <p>
-          Providing trusted services in Tax & Accounting, Home Tutoring, and
-          Manpower Consultancy.
+          Our vision is to be the nation’s most trusted multi-service
+          organization—empowering individuals, families, and businesses with
+          transparent financial guidance, world-class education, and dependable
+          career solutions, all delivered seamlessly under one roof.
         </p>
       </div>
 
-      <!-- Quick Links -->
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#HOME">Home</a></li>
-          <li><a href="#TAX">Tax & Accounting</a></li>
-          <li><a href="#TUTION">Home Tuition</a></li>
-          <li><a href="#MANPOWER">Manpower</a></li>
-        </ul>
+      <!-- Mission -->
+      <div class="mission">
+        <img src="/Media/mission-removebg-preview.png" alt="Mission Icon" />
+        <p>
+          Our mission is to break barriers by making finance, education, and
+          career support universally accessible, affordable, and
+          reliable—empowering people to achieve sustainable growth and long-term
+          success.
+        </p>
       </div>
 
-      <!-- Contact Info -->
-      <div id="CONTACT" class="footer-contact">
-        <h4>Contact Us</h4>
-        <p>Email: info@reliantindia.com</p>
-        <p>Phone: +91-98765-43210</p>
-        <p>Address: Bengaluru, India</p>
+      <!-- Values -->
+      <div class="values">
+        <img src="/Media/values-removebg-preview.png" alt="Values Icon" />
+        <p>
+          At Reliant India Group, our values define who we are. We uphold the
+          highest standards of integrity, pursue excellence in every service we
+          deliver, and embrace a people-first approach that builds trust and
+          lasting relationships.
+        </p>
       </div>
+    </section>
 
-      <!-- Social Media -->
-      <div class="footer-social">
-        <h4>Follow Us</h4>
-        <a href="#"><img src="/Media/insta.png" class="insta" alt="" /></a>
-        <a href="#"><img src="/Media/linkedin.png" class="insta" alt="" /></a>
-        <a href="#"><img src="/Media/whatsapp.png" class="wassup" alt="" /></a>
-        <a href="#"><img src="/Media/call.png" class="insta" alt="" /></a>
-      </div>
+    <!-- 🌟 Services Section -->
+
+    <div class="separate">
+      <blockquote id="quote-manpower" class="service-quote">
+        <p class="quote-text">
+          "Great vision without great people is irrelevant."
+        </p>
+        <footer class="quote-author">— Jim Collins</footer>
+      </blockquote>
     </div>
 
-    <!-- Bottom -->
-    <div class="footer-bottom">
-      <p>© 2025 Reliant India Group | All Rights Reserved</p>
-    </div>
-  </footer>
-</body>
+    <!-- MANPOWER CONSULTANCY PAGE -->
+    <section id="MANPOWER" class="hero-manpower">
+      <h1>Manpower Consultancy Services</h1>
+      <p>
+        Helping businesses hire right and professionals find the right
+        opportunities.
+      </p>
+      <div class="Hero-buttons">
+        <a href="#employers" class="E-btn">For Employers</a>
+        <a href="#jobseekers" class="J-btn">For Job Seekers</a>
+      </div>
+    </section>
 
+    <!-- EMPLOYER SECTION -->
+    <section id="employers" class="employers">
+      <h2>Solutions for Employers</h2>
+      <p>
+        We provide tailored staffing and HR solutions to help companies grow
+        with the right talent. From permanent recruitment to payroll
+        outsourcing, we simplify hiring so you can focus on business.
+      </p>
+
+      <div class="service-cards">
+        <article class="service-card">
+          <h3>Recruitment & Staffing</h3>
+          <ul>
+            <li>Permanent & Contract Staffing</li>
+            <li>Executive Search & Leadership Hiring</li>
+            <li>Mass/Bulk Hiring</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>HR & Payroll Outsourcing</h3>
+          <ul>
+            <li>Payroll & compliance (PF, ESIC, gratuity)</li>
+            <li>Leave & attendance management</li>
+            <li>HR process outsourcing</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Industry-Specific Hiring</h3>
+          <ul>
+            <li>IT, Finance, Engineering, Manufacturing</li>
+            <li>Retail, FMCG, Hospitality</li>
+            <li>Healthcare & Pharma</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Our Hiring Process</h3>
+          <ul>
+            <li>Requirement gathering</li>
+            <li>Candidate sourcing & screening</li>
+            <li>Shortlisting & interviews</li>
+            <li>Hiring & onboarding support</li>
+            <li>Post-placement follow-up</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="Hire">
+        <a href="#CONTACT" class="Hire-btn">Hire the Right Talent Today</a>
+      </div>
+    </section>
+    <hr />
+
+    <section id="employerFormSection" class="employer-form-section">
+  <h2>Employer Recruitment Request</h2>
+  <p>Fill out this form to let us understand your hiring needs. Our experts will get back to you with the best talent solutions.</p>
+
+  <form id="employerForm" class="employer-form">
+    <div class="employer-form-group">
+      <label for="employerCompanyName">Company Name *</label>
+      <input type="text" id="employerCompanyName" name="employerCompanyName" placeholder="Enter your company name" required>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerContactName">Contact Person Name *</label>
+      <input type="text" id="employerContactName" name="employerContactName" placeholder="Enter contact person name" required>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerEmail">Email *</label>
+      <input type="email" id="employerEmail" name="employerEmail" placeholder="Enter your email" required>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerPhone">Phone Number *</label>
+      <input type="tel" id="employerPhone" name="employerPhone" placeholder="Enter phone number" required>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerIndustry">Industry *</label>
+      <select id="employerIndustry" name="employerIndustry" required>
+        <option value="" disabled selected>Select industry</option>
+        <option value="it">IT / Software</option>
+        <option value="finance">Finance / Banking</option>
+        <option value="engineering">Engineering / Manufacturing</option>
+        <option value="retail">Retail / FMCG</option>
+        <option value="healthcare">Healthcare / Pharma</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerPositions">Positions Required *</label>
+      <input type="text" id="employerPositions" name="employerPositions" placeholder="e.g., Software Engineer, Accountant" required>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerNumEmployees">Number of Employees to Hire *</label>
+      <input type="number" id="employerNumEmployees" name="employerNumEmployees" min="1" required>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerHiringType">Hiring Type *</label>
+      <select id="employerHiringType" name="employerHiringType" required>
+        <option value="" disabled selected>Select type</option>
+        <option value="permanent">Permanent</option>
+        <option value="contract">Contract</option>
+        <option value="internship">Internship</option>
+        <option value="bulk">Bulk Hiring</option>
+      </select>
+    </div>
+
+    <div class="employer-form-group">
+      <label for="employerMessage">Additional Details</label>
+      <textarea id="employerMessage" name="employerMessage" rows="4" placeholder="Any special requirements or notes"></textarea>
+    </div>
+
+    <div class="employer-form-submit">
+      <button type="submit" id="employerFormSubmitBtn">Submit Hiring Request</button>
+    </div>
+  </form>
+</section>
+
+
+    <!-- JOB SEEKER SECTION -->
+    <section id="jobseekers" class="jobseekers">
+      <h2>Opportunities for Job Seekers</h2>
+      <p>
+        Whether you’re a fresher or an experienced professional, we connect you
+        with jobs that match your skills and career goals. Plus, we offer
+        training and support to boost employability.
+      </p>
+
+      <div class="service-cards">
+        <article class="service-card">
+          <h3>Job Placement</h3>
+          <ul>
+            <li>IT, Finance, Engineering, Retail, Healthcare</li>
+            <li>Domestic & international opportunities</li>
+            <li>Campus & fresher hiring</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Career Support</h3>
+          <ul>
+            <li>Resume building</li>
+            <li>Interview preparation</li>
+            <li>Skill assessment & counseling</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Training & Development</h3>
+          <ul>
+            <li>Soft skills & communication</li>
+            <li>Domain-specific training</li>
+            <li>Pre-job orientation</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Your Journey with Us</h3>
+          <ul>
+            <li>Submit your resume</li>
+            <li>Screening & counseling</li>
+            <li>Skill alignment & training</li>
+            <li>Interview scheduling</li>
+            <li>Placement & post-hire support</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="Hire-btn2">
+        <h3>Get Placed with the Right Job</h3>
+        <a href="/contact" class="second-btn">Submit Resume</a>
+      </div>
+    </section>
+
+    <section id="jobseekerFormSection" class="jobseeker-form-section">
+  <h2>Job Seeker Registration</h2>
+  <p>Provide your details and we’ll help you find the right job opportunities.</p>
+
+  <form id="jobseekerForm" class="jobseeker-form">
+    <div class="jobseeker-form-group">
+      <label for="jobseekerFullName">Full Name *</label>
+      <input type="text" id="jobseekerFullName" name="jobseekerFullName" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerEmail">Email *</label>
+      <input type="email" id="jobseekerEmail" name="jobseekerEmail" placeholder="Enter your email" required>
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerPhone">Phone Number *</label>
+      <input type="tel" id="jobseekerPhone" name="jobseekerPhone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerExperience">Experience Level *</label>
+      <select id="jobseekerExperience" name="jobseekerExperience" required>
+        <option value="" disabled selected>Select experience</option>
+        <option value="fresher">Fresher</option>
+        <option value="1-3">1–3 years</option>
+        <option value="3-5">3–5 years</option>
+        <option value="5+">5+ years</option>
+      </select>
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerIndustry">Preferred Industry *</label>
+      <select id="jobseekerIndustry" name="jobseekerIndustry" required>
+        <option value="" disabled selected>Select industry</option>
+        <option value="it">IT / Software</option>
+        <option value="finance">Finance / Banking</option>
+        <option value="engineering">Engineering / Manufacturing</option>
+        <option value="retail">Retail / FMCG</option>
+        <option value="healthcare">Healthcare / Pharma</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerSkills">Key Skills *</label>
+      <input type="text" id="jobseekerSkills" name="jobseekerSkills" placeholder="e.g., Java, Excel, Communication" required>
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerResume">Upload Resume</label>
+      <input type="file" id="jobseekerResume" name="jobseekerResume" accept=".pdf,.doc,.docx">
+    </div>
+
+    <div class="jobseeker-form-group">
+      <label for="jobseekerMessage">Additional Information</label>
+      <textarea id="jobseekerMessage" name="jobseekerMessage" rows="4" placeholder="Any notes or preferences"></textarea>
+    </div>
+
+    <div class="jobseeker-form-submit">
+      <button type="submit" id="jobseekerFormSubmitBtn">Register Now</button>
+    </div>
+  </form>
+</section>
+
+
+    <section class="Separate1">
+      <blockquote id="quote-tax" class="service-quote">
+        <p class="quote-text">
+          "In this world nothing can be said to be certain, except death and
+          taxes."
+        </p>
+        <footer class="quote-author">— Benjamin Franklin</footer>
+      </blockquote>
+    </section>
+
+    <!-- Tax and Accounts Section -->
+
+    <section id="TAX" class="Tax-hero">
+      <div class="tax-herotext">
+        <h1>Tax & Accounting Services</h1>
+        <p>
+          Reliable, transparent, and affordable solutions to keep your finances
+          stress-free.
+        </p>
+        <h2 class="overview">Overview</h2>
+        <p>
+          Managing taxes and accounting can be complex. Our expert team ensures
+          compliance, accuracy, and efficiency so you can focus on growing your
+          business.
+        </p>
+      </div>
+      <div class="tax-hero-content">
+        <a href="/contact" class="tax-btn">Book a Consultation</a>
+      </div>
+    </section>
+
+    <section class="tax-offerings">
+      <div class="service-cards">
+        <article class="service-card">
+          <h3>Our Key Offerings</h3>
+          <ul>
+            <li>Income Tax Filing</li>
+            <li>GST Compliance</li>
+            <li>Bookkeeping & Payroll</li>
+            <li>Financial Statement Preparation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="tax-why-choose">
+      <div class="service-cards">
+        <article class="service-card">
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>Accuracy & Compliance</li>
+            <li>Cost-Effective Solutions</li>
+            <li>Experienced Professionals</li>
+            <li>Transparent Communication</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="tax-process">
+      <div class="service-cards">
+        <article class="service-card">
+          <h3>Our Process</h3>
+          <ul>
+            <li>Consultation</li>
+            <li>Documentation</li>
+            <li>Filing & Compliance</li>
+            <li>Ongoing Support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <div class="tax-submit">
+      <a href="/contact" class="tax-btn2">Book a Consultation</a>
+    </div>
+
+    <section id="taxFormSection" class="tax-form-section">
+  <h2>Tax & Accounting Consultation Request</h2>
+  <p>Fill out the form below and our experts will get back to you with tailored solutions.</p>
+  
+  <form id="taxForm" class="tax-form">
+    <div class="tax-form-group">
+      <label for="taxFullName">Full Name *</label>
+      <input type="text" id="taxFullName" name="taxFullName" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="tax-form-group">
+      <label for="taxEmail">Email *</label>
+      <input type="email" id="taxEmail" name="taxEmail" placeholder="Enter your email" required>
+    </div>
+
+    <div class="tax-form-group">
+      <label for="taxPhone">Phone Number *</label>
+      <input type="tel" id="taxPhone" name="taxPhone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="tax-form-group">
+      <label for="taxBusinessType">Business Type</label>
+      <select id="taxBusinessType" name="taxBusinessType">
+        <option value="" disabled selected>Select business type</option>
+        <option value="individual">Individual</option>
+        <option value="proprietorship">Proprietorship</option>
+        <option value="partnership">Partnership</option>
+        <option value="private_ltd">Private Limited</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="tax-form-group">
+      <label for="taxServiceRequired">Service Required *</label>
+      <select id="taxServiceRequired" name="taxServiceRequired" required>
+        <option value="" disabled selected>Select service</option>
+        <option value="income_tax_filing">Income Tax Filing</option>
+        <option value="gst_compliance">GST Compliance</option>
+        <option value="bookkeeping">Bookkeeping & Payroll</option>
+        <option value="financial_statements">Financial Statement Preparation</option>
+        <option value="tax_planning">Tax Planning & Advisory</option>
+      </select>
+    </div>
+
+    <div class="tax-form-group">
+      <label for="taxMessage">Additional Details</label>
+      <textarea id="taxMessage" name="taxMessage" rows="5" placeholder="Any additional information or questions..."></textarea>
+    </div>
+
+    <div class="tax-form-submit">
+      <button type="submit" id="taxFormSubmitBtn">Request Consultation</button>
+    </div>
+  </form>
+</section>
+
+
+    <section class="separate2">
+      <blockquote id="quote-education" class="service-quote">
+        <p class="quote-text">
+          "Education is the most powerful weapon which you can use to change the
+          world."
+        </p>
+        <footer class="quote-author">— Nelson Mandela</footer>
+      </blockquote>
+    </section>
+
+    <!-- Tution Section -->
+    <section id="TUTION" class="tution-hero">
+      <div class="tution-herotext">
+        <h1>Home Tutoring Services</h1>
+        <p>
+          Personalized one-to-one learning for every class, every subject, at
+          your pace.
+        </p>
+        <h2>Overview</h2>
+        <p>
+          We connect students with experienced tutors for tailored learning at
+          home or online. From foundational skills to board exams and
+          competitive prep, we build confidence, clarity, and consistency with
+          structured lesson plans and regular progress tracking.
+        </p>
+      </div>
+      <div class="tution-hero-content">
+        <a href="/contact" class="tution-btn">Book a Consultation</a>
+      </div>
+    </section>
+
+      <section class="tution-offerings">
+        <div class="service-cards">
+          <article class="service-card">
+            <h3>What We Offer</h3>
+            <ul>
+              <li>School-Level (Class 1–10)</li>
+              <li>Senior Secondary (11–12)</li>
+              <li>Competitive & Olympiads</li>
+              <li>Skills & Languages</li>
+              <li>Special Learning Needs</li>
+            </ul>
+          </article>
+      </section>
+
+      <section class="tution-why-choose">
+        <div class="service-cards">
+          <article class="service-card">
+            <h3>Why Choose Our Tutoring?</h3>
+            <ul>
+              <li>Experienced, vetted tutors for each subject</li>
+              <li>Customized lesson plans & weekly reports</li>
+              <li>Flexible at-home or online sessions</li>
+              <li>Transparent pricing & easy scheduling</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="tution-process">
+        <div class="service-cards">
+          <article class="service-card">
+            <h3>How It Works</h3>
+            <ul>
+              <li>
+                Assessment: Free evaluation to understand level
+                & goals
+              </li>
+              <li>
+                Match: We assign a tutor best suited to the
+                student
+              </li>
+              <li>
+                Plan: Milestone-based study plan with schedule
+              </li>
+              <li>
+                Teach & Track: Regular classes + progress
+                updates
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    <section class="tution-cta">
+      <h2>Start a Free Trial Session</h2>
+      <p>Find the perfect tutor and see the difference in the first week.</p>
+      <a href="/contact" class="tution-btn2">Get Started</a>
+    </section>
+
+    <section id="tutionFormSection" class="tution-form-section">
+  <h2>Home Tutoring Request Form</h2>
+  <p>Provide your details and we’ll connect you with the perfect tutor.</p>
+
+  <form id="tutionForm" class="tution-form">
+    <div class="tution-form-group">
+      <label for="tutionStudentName">Student Name *</label>
+      <input type="text" id="tutionStudentName" name="tutionStudentName" placeholder="Enter student’s full name" required>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionParentName">Parent/Guardian Name *</label>
+      <input type="text" id="tutionParentName" name="tutionParentName" placeholder="Enter parent/guardian name" required>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionEmail">Email *</label>
+      <input type="email" id="tutionEmail" name="tutionEmail" placeholder="Enter your email" required>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionPhone">Phone Number *</label>
+      <input type="tel" id="tutionPhone" name="tutionPhone" placeholder="Enter contact number" required>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionClass">Class / Grade *</label>
+      <select id="tutionClass" name="tutionClass" required>
+        <option value="" disabled selected>Select class</option>
+        <option value="1-5">Class 1–5</option>
+        <option value="6-8">Class 6–8</option>
+        <option value="9-10">Class 9–10</option>
+        <option value="11-12">Class 11–12</option>
+        <option value="competitive">Competitive / Olympiads</option>
+      </select>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionSubjects">Subjects Required *</label>
+      <input type="text" id="tutionSubjects" name="tutionSubjects" placeholder="e.g., Math, Science, English" required>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionMode">Mode of Tutoring *</label>
+      <select id="tutionMode" name="tutionMode" required>
+        <option value="" disabled selected>Select mode</option>
+        <option value="home">Home Tuition</option>
+        <option value="online">Online Tutoring</option>
+        <option value="hybrid">Hybrid (Home + Online)</option>
+      </select>
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionSchedule">Preferred Schedule</label>
+      <input type="text" id="tutionSchedule" name="tutionSchedule" placeholder="e.g., Mon-Wed-Fri evenings">
+    </div>
+
+    <div class="tution-form-group">
+      <label for="tutionMessage">Additional Notes</label>
+      <textarea id="tutionMessage" name="tutionMessage" rows="4" placeholder="Any other details or special requirements"></textarea>
+    </div>
+
+    <div class="tution-form-submit">
+      <button type="submit" id="tutionFormSubmitBtn">Request a Tutor</button>
+    </div>
+  </form>
+</section>
+
+
+   <!-- TOURS & TRAVELS SECTION -->
+<section id="TOURS" class="tours-hero">
+  <div class="tours-herotext">
+    <h1>Bihar Tours & Travels</h1>
+    <p>
+      Explore the land of ancient wisdom, spirituality, and culture with our
+      Bihar-specific travel services. From world-famous heritage sites to hidden
+      gems, we create personalized travel experiences that connect you with the
+      heart of Bihar.
+    </p>
+    <h2>Overview</h2>
+    <p>
+      Whether you seek a spiritual retreat, a deep dive into history, or a
+      nature escape, we curate journeys across Bihar that are comfortable,
+      affordable, and memorable. With expert planning, smooth logistics, and
+      local insights, your Bihar experience becomes stress-free and enriching.
+    </p>
+  </div>
+  <div class="tours-hero-content">
+    <a href="/contact" class="tours-btn">Plan Your Bihar Trip</a>
+  </div>
+</section>
+
+<section class="tours-offerings">
+  <div class="service-cards">
+    <article class="service-card">
+      <h3>What We Offer</h3>
+      <ul>
+        <li>Heritage & Pilgrimage Tours (Bodh Gaya, Nalanda, Vaishali, Rajgir)</li>
+        <li>Nature & Adventure Trips (Kakolat Waterfall, Rohtasgarh Fort, Kanwar Lake)</li>
+        <li>Custom Packages for Families, Students & Groups</li>
+        <li>Hotel, Train & Local Transport Bookings</li>
+        <li>Guided City & Village Experiences</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="tours-why-choose">
+  <div class="service-cards">
+    <article class="service-card">
+      <h3>Why Travel with Us?</h3>
+      <ul>
+        <li>Local expertise with deep knowledge of Bihar’s culture & history</li>
+        <li>Affordable, transparent, and customizable packages</li>
+        <li>End-to-end travel support: stay, transport & guides</li>
+        <li>Focus on authentic experiences beyond the usual</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="tours-process">
+  <div class="service-cards">
+    <article class="service-card">
+      <h3>How It Works</h3>
+      <ul>
+        <li>Consultation: Tell us your travel goals & preferences</li>
+        <li>Plan: We design a personalized Bihar itinerary</li>
+        <li>Booking: Hotels, trains, guides & logistics handled</li>
+        <li>Travel: Enjoy a seamless journey with 24/7 support</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<div class="tours-submit">
+  <a href="/contact" class="tours-btn2">Start Your Journey</a>
+</div>
+
+<section id="toursFormSection" class="tours-form-section">
+  <h2>Bihar Tours & Travels Booking Request</h2>
+  <p>Plan your trip with us! Fill out the form and our travel experts will assist you.</p>
+
+  <form id="toursForm" class="tours-form">
+    <div class="tours-form-group">
+      <label for="travelerName">Full Name *</label>
+      <input type="text" id="travelerName" name="travelerName" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="tours-form-group">
+      <label for="travelerEmail">Email *</label>
+      <input type="email" id="travelerEmail" name="travelerEmail" placeholder="Enter your email" required>
+    </div>
+
+    <div class="tours-form-group">
+      <label for="travelerPhone">Phone Number *</label>
+      <input type="tel" id="travelerPhone" name="travelerPhone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="tours-form-group">
+      <label for="travelDates">Preferred Travel Dates *</label>
+      <input type="text" id="travelDates" name="travelDates" placeholder="e.g., 12 Oct – 18 Oct" required>
+    </div>
+
+    <div class="tours-form-group">
+      <label for="tourPackage">Tour Package *</label>
+      <select id="tourPackage" name="tourPackage" required>
+        <option value="" disabled selected>Select package</option>
+        <option value="bihar_heritage">Bihar Heritage Tour</option>
+        <option value="pilgrimage">Pilgrimage Tour</option>
+        <option value="adventure">Adventure & Nature Tour</option>
+        <option value="custom">Custom Package</option>
+      </select>
+    </div>
+
+    <div class="tours-form-group">
+      <label for="numTravelers">Number of Travelers *</label>
+      <input type="number" id="numTravelers" name="numTravelers" min="1" placeholder="Enter number of people" required>
+    </div>
+
+    <div class="tours-form-group">
+      <label for="travelPreferences">Travel Preferences</label>
+      <textarea id="travelPreferences" name="travelPreferences" rows="4" placeholder="Any special requests or preferences"></textarea>
+    </div>
+
+    <div class="tours-form-submit">
+      <button type="submit" id="toursFormSubmitBtn">Request Your Trip Plan</button>
+    </div>
+  </form>
+</section>
+
+
+
+    
+    <!-- Footerrrrrrrrrrrrr -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-about">
+          <h3>Reliant India Group</h3>
+          <p>
+            Providing trusted services in Tax & Accounting, Home Tutoring, and
+            Manpower Consultancy.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#HOME">Home</a></li>
+            <li><a href="#TAX">Tax & Accounting</a></li>
+            <li><a href="#TUTION">Home Tuition</a></li>
+            <li><a href="#MANPOWER">Manpower</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div id="CONTACT" class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: info@reliantindia.com</p>
+          <p>Phone: +91-98765-43210</p>
+          <p>Address: Bengaluru, India</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a href="#"><img src="/Media/insta.png" class="insta" alt="" /></a>
+          <a href="#"><img src="/Media/linkedin.png" class="insta" alt="" /></a>
+          <a href="#"
+            ><img src="/Media/whatsapp.png" class="wassup" alt=""
+          /></a>
+          <a href="#"><img src="/Media/call.png" class="insta" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Reliant India Group | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

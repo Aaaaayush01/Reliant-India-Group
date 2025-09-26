@@ -1,0 +1,603 @@
+/*
+ * =========================================
+ * RELIANT INDIA GROUP: OPTIMIZED STYLESHEET
+ * =========================================
+ *
+ * This stylesheet is structured for better organization, maintainability, and
+ * responsiveness using modern CSS practices.
+ *
+ * 1. Global Variables & Base Styles
+ * 2. Header & Navigation
+ * 3. Hero Section
+ * 4. About & Vision/Mission/Values
+ * 5. Unified Service Sections (Manpower, Tax, Tuition)
+ * 6. Contact Form
+ * 7. Footer
+ * 8. Responsive Design (Mobile-First Approach)
+ *
+ */
+
+/* =========================================
+ * 1. GLOBAL VARIABLES & BASE STYLES
+ * ========================================= */
+
+:root {
+  /* Colors */
+  --color-primary: #2c3e50;
+  --color-secondary: #0052cc;
+  --color-accent: #f9a825;
+  --color-light: whitesmoke;
+  --color-dark: #333;
+  --color-text-body: #555;
+  --color-text-light: #f1f1f1;
+  
+  /* Fonts */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", "Roboto", sans-serif;
+  
+  /* Spacing */
+  --space-sm: 0.5rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  
+  /* Border Radius & Shadow */
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0 6px 12px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+/* Fluid Typography */
+h1 {
+  font-size: clamp(28px, 6vw, 42px);
+}
+
+h2 {
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+h3 {
+  font-size: clamp(18px, 3vw, 24px);
+}
+
+p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  margin-bottom: 1em;
+}
+
+/* Reusable Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Reusable Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: 2px solid var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: var(--color-secondary);
+}
+
+/* =========================================
+ * 2. HEADER & NAVIGATION
+ * ========================================= */
+
+.main-header {
+  background: var(--color-light);
+  padding: 8px var(--space-lg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--box-shadow-light);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+}
+
+.primary-nav .nav-menu {
+  display: flex;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.primary-nav .nav-menu a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: bold;
+  border-radius: var(--border-radius-sm);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.primary-nav .nav-menu a:hover {
+  background: var(--color-primary);
+  color: var(--color-light);
+}
+
+.primary-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-light);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius-sm);
+  min-width: 200px;
+  list-style: none;
+  padding: 5px 0;
+  box-shadow: var(--box-shadow-light);
+  z-index: 10;
+}
+
+.primary-nav .has-dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.primary-nav .dropdown-menu a {
+  padding: 10px 15px;
+  font-weight: normal;
+}
+
+/* =========================================
+ * 3. HERO SECTION
+ * ========================================= */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  background-image: url(/Media/blue-pebs.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: var(--space-lg) 0;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-subtext {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.service-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.service-card {
+  padding: var(--space-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-medium);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  color: var(--color-text-light);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 250px;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.service-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.service-card h3 {
+  font-weight: 700;
+}
+
+.service-card p {
+  font-weight: 500;
+}
+
+/* Specific background images */
+#hero .service-card:nth-child(1) { background-image: url(/Media/tax.jpg); }
+#hero .service-card:nth-child(2) { background-image: url(/Media/manpower.jpg); }
+#hero .service-card:nth-child(3) { background-image: url(/Media/tution.jpg); }
+
+/* =========================================
+ * 4. ABOUT & VISION/MISSION/VALUES
+ * ========================================= */
+
+.about-section {
+  padding: var(--space-lg) 0;
+  text-align: center;
+}
+
+.about-section h2, .vision-mission-values h3 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.vision-mission-values {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  padding: var(--space-lg) 0;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-light);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-medium);
+  padding: var(--space-md);
+  flex: 1 1 300px;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: var(--space-md);
+}
+
+/* =========================================
+ * 5. UNIFIED SERVICE SECTIONS
+ * ========================================= */
+
+.service-page {
+  padding-bottom: var(--space-lg);
+}
+
+.service-hero {
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.service-quote {
+  max-width: 900px;
+  margin: var(--space-lg) auto;
+  padding: 1.15rem 1.5rem;
+  background: #fdf4f1;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16, 16, 16, 0.06);
+  text-align: center;
+  border-top: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.service-quote .quote-text {
+  font-style: italic;
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.service-quote .quote-author {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.content-section {
+  padding: var(--space-md) 0;
+  text-align: center;
+}
+
+.service-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+}
+
+.feature-card-item {
+  background: var(--color-light);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-medium);
+  padding: var(--space-md);
+  text-align: left;
+}
+
+.feature-card-item h4 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.feature-card-item ul, .feature-card-item ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-card-item li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.feature-card-item li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.separator-line {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: var(--space-lg) 0;
+}
+
+/* =========================================
+ * 6. CONTACT FORM
+ * ========================================= */
+
+#enquiry-form {
+  background: #f9f9f9;
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  max-width: 700px;
+  margin: var(--space-lg) auto;
+  box-shadow: var(--box-shadow-medium);
+}
+
+.enquiry-heading {
+  text-align: center;
+}
+
+.enquiry-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-md);
+}
+
+.enquiry-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.enquiry-input, .enquiry-select, .enquiry-textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius-sm);
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.enquiry-input:focus, .enquiry-select:focus, .enquiry-textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.enquiry-textarea {
+  resize: vertical;
+}
+
+.enquiry-consent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================================
+ * 7. FOOTER
+ * ========================================= */
+
+.main-footer {
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-links img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-links img:hover {
+  transform: scale(1.1);
+}
+
+.main-footer h4 {
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.main-footer p, .main-footer li, .main-footer a {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.main-footer a:hover {
+  color: var(--color-accent);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* =========================================
+ * 8. RESPONSIVE DESIGN
+ * ========================================= */
+
+@media (max-width: 768px) {
+  /* Header Mobile */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .primary-nav .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    margin-top: var(--space-sm);
+  }
+  
+  .primary-nav .nav-menu li {
+    width: 100%;
+  }
+
+  .primary-nav .has-dropdown:hover > .dropdown-menu {
+    display: none; /* Disable hover on mobile for better usability */
+  }
+
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content .btn {
+    width: 100%;
+  }
+
+  /* About & Vision/Mission/Values */
+  .vision-mission-values {
+    flex-direction: column;
+  }
+
+  /* Service Pages */
+  .service-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Unified Buttons */
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}

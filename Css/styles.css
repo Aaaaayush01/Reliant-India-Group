@@ -1,3 +1,117 @@
+/* ===== Navbar Mobile ===== */
+@media (max-width: 600px) {
+  .card1,
+  .card2,
+  .card3 {
+    padding: 20px 15px;
+  }
+
+  .card1 h3,
+  .card2 h3,
+  .card3 h3 {
+    font-size: 1.2rem;
+  }
+
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    font-size: 0.95rem;
+  }
+
+  .card1 .btn,
+  .card2 .btn,
+  .card3 .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 900px) {
+  .visionary {
+    gap: 15px;
+  }
+
+  .vision,
+  .mission,
+  .values {
+    flex: 1 1 100%;
+  }
+
+  .visionary img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  #enquiry-section {
+    padding: 20px 10px;
+    margin: 20px 10px;
+  }
+
+  .enquiry-submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+body {
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+h2 {
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+@media (max-width: 768px) {
+  .main-head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  /* Dropdown always visible on mobile */
+  .has-dropdown:hover > .dropdown {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
 /* ================= GLOBAL STYLES ================= */
 html {
   scroll-behavior: smooth;
@@ -116,12 +230,12 @@ p {
   flex-direction: column; /* stack intro on top of services */
   align-items: center; /* center content horizontally */
   gap: 2rem;
-  background-image: url(/Media/blue-pebs.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 3rem 1rem; /* use padding instead of fixed height */
+  padding: clamp(2rem, 5vw, 4rem) 1rem; /* use padding instead of fixed height */
   box-sizing: border-box;
   width: 100%;
+  background-image: url(/Media/background/WATER\ RIPPLES.jpeg);
 }
 
 /* ================= HERO SECTION ================= */
@@ -135,12 +249,27 @@ p {
   padding: 0 1rem;
 }
 
+.card-buttons {
+  
+}
+
 /* Intro Heading */
 .intro {
   margin: 0 0 12px 0;
-  color: #2c3e50;
-  font-size: 42px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #1d3853;
+  font-size: clamp(24px, 5.5vw, 42px);
+  font-weight: 900;
+  text-decoration: underline;
+  margin-bottom: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intp {
+  color: #a42803;
+  margin: 0px;
+  font-style: italic;
+  font-size: 1.5vw;
+
 }
 
 /* CTA Button */
@@ -199,22 +328,26 @@ p {
 
 .card1 h3,
 .card2 h3,
-.card3 h3 {
+.card3 h3,
+.card4 h3 {
   font-weight: 700; /* bold heading */
   color: #fff; /* white for contrast */
 }
 
-.card1 p,
-.card2 p,
-.card3 p {
+.card1 li,
+.card2 li,
+.card3 li,
+.card4 li {
   font-weight: 500; /* medium bold for body text */
   color: #f1f1f1; /* softer white (less harsh) */
+  text-align: left;
 }
 
 /* 🎴 Individual Service Card */
 .card1,
 .card2,
-.card3 {
+.card3,
+.card4 {
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -228,7 +361,8 @@ p {
 
 .card1::before,
 .card2::before,
-.card3::before {
+.card3::before,
+.card4::before {
   content: "";
   position: absolute;
   top: 0;
@@ -242,32 +376,39 @@ p {
 /* make sure your text/icons/buttons stay above overlay */
 .card1 > *,
 .card2 > *,
-.card3 > * {
+.card3 > *,
+.card4 > * {
   position: relative;
   z-index: 2;
 }
 
 .card1 {
-  background-image: url(/Media/tax.jpg);
+  background-image: url(/Media/tax\ gemini.png);
 }
 
 .card2 {
-  background-image: url(/Media/manpower.jpg);
+  background-image: url(/Media/manpower\ gemini.png);
 }
 .card3 {
-  background-image: url(/Media/tution.jpg);
+  background-image: url(/Media/tution\ gemini.png);
 }
+.card4 {
+  background-image: url(/Media/bihar\ tour.png);
+}
+
 
 .card1:hover,
 .card2:hover,
-.card3:hover {
+.card3:hover,
+.card4:hover {
   transform: translateY(-5px); /* Lift effect on hover */
 }
 
 /* 🎯 Icon inside card */
 .card1 .icon,
 .card2 .icon,
-.card3 .icon {
+.card3 .icon,
+.card4 .icon {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
@@ -275,7 +416,8 @@ p {
 /* 🔘 Buttons inside card */
 .card1 .btn,
 .card2 .btn,
-.card3 .btn {
+.card3 .btn,
+.card4 .btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -286,12 +428,33 @@ p {
   font-weight: bold;
 }
 
+.card1 .btn2,
+.card2 .btn2,
+.card3 .btn2,
+.card4 .btn2 {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #db4719;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
 .card1 .btn:hover,
 .card2 .btn:hover,
-.card3 .btn:hover {
+.card3 .btn:hover,
+.card4 .btn:hover {
   background: #003d99;
 }
 
+.card1 .btn2:hover,
+.card2 .btn2:hover,
+.card3 .btn2:hover,
+.card4 .btn2:hover {
+  background: #a42803;
+}
 /* ================= ABOUT SECTION ================= */
 .Main-about {
   margin: 0 auto;
@@ -635,4 +798,295 @@ p {
   --quote-text: #222;
   --quote-muted: #555;
   --max-width: 900px;
+}
+
+/* ================= RESPONSIVE STYLES ================= */
+
+/* ---------- GENERAL FLUID TYPOGRAPHY ---------- */
+body {
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+h2 {
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+h3 {
+  font-size: clamp(18px, 3vw, 24px);
+}
+
+/* ---------- HEADER / NAVBAR MOBILE ---------- */
+@media (max-width: 768px) {
+  .main-head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  /* Dropdown always hidden by hover */
+  .has-dropdown:hover > .dropdown {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+/* ---------- HERO SECTION ---------- */
+@media (max-width: 680px) {
+  .superrdiv {
+    padding: 2rem 1rem;
+  }
+
+  .intro {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .cta-12 {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Main-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* ---------- SERVICES CARDS ---------- */
+@media (max-width: 600px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    padding: 20px 15px;
+  }
+
+  .card1 h3,
+  .card2 h3,
+  .card3 h3 {
+    font-size: 1.2rem;
+  }
+
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    font-size: 0.95rem;
+  }
+
+  .card1 .btn,
+  .card2 .btn,
+  .card3 .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- VISION / MISSION / VALUES ---------- */
+@media (max-width: 900px) {
+  .visionary {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vision,
+  .mission,
+  .values {
+    flex: 1 1 100%;
+    padding: 20px 15px;
+  }
+
+  .visionary img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+}
+
+/* ---------- FORMS ---------- */
+@media (max-width: 500px) {
+  #enquiry-section {
+    padding: 20px 10px;
+    margin: 20px 10px;
+  }
+
+  .enquiry-submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- TAX / TUITION / EMPLOYER CARDS ---------- */
+@media (max-width: 768px) {
+  .Cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* ---------- QUOTES ---------- */
+@media (max-width: 680px) {
+  .service-quote {
+    padding: 0.9rem 1rem;
+    margin: 1.5rem 1rem;
+  }
+
+  .service-quote .quote-text {
+    font-size: 1rem;
+  }
+
+  .service-quote .quote-author {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------- HERO BUTTONS / CTA ---------- */
+@media (max-width: 680px) {
+  .Hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .E-btn,
+  .J-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+/* ===== Unified Service Cards ===== */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.service-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.service-card a:hover {
+  background: #0052cc;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Hover lift effect */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card li {
+    font-size: 0.95rem;
+  }
+
+  .service-card a {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }

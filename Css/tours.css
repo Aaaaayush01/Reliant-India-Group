@@ -1,0 +1,187 @@
+/* TOURS & TRAVELS SECTION */
+.tours-hero {
+  background: url('/Media/bihar\ tour.png') no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.tours-herotext h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.tours-herotext p {
+  max-width: 800px;
+  margin: 0 auto 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.tours-hero-content {
+  margin-top: 20px;
+}
+
+.tours-btn,
+.tours-btn2 {
+  display: inline-block;
+  background: #e67e22;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.tours-btn:hover,
+.tours-btn2:hover {
+  background: #d35400;
+}
+
+/* SERVICE CARDS */
+.tours-offerings,
+.tours-why-choose,
+.tours-process {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.tours-offerings:nth-child(even),
+.tours-why-choose:nth-child(even),
+.tours-process:nth-child(even) {
+  background: #fff;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card ul li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #555;
+}
+
+.service-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* CTA Section */
+.tours-submit {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f0f0f0;
+}
+
+
+/* Tours & Travels Form Styles */
+.tours-form-section {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  background: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+.tours-form-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.tours-form-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.tours-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tours-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.tours-form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.tours-form-group input,
+.tours-form-group select,
+.tours-form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tours-form-group input:focus,
+.tours-form-group select:focus,
+.tours-form-group textarea:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 6px rgba(231,76,60,0.3);
+}
+
+.tours-form-submit {
+  text-align: center;
+}
+
+#toursFormSubmitBtn {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#toursFormSubmitBtn:hover {
+  background: #c0392b;
+}
