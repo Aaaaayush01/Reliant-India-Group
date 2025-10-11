@@ -235,7 +235,7 @@ p {
   padding: clamp(2rem, 5vw, 4rem) 1rem; /* use padding instead of fixed height */
   box-sizing: border-box;
   width: 100%;
-  background-image: url(/Media/background/WATER\ RIPPLES.jpeg);
+  background-image: url(/Media/Download\ premium\ image\ of\ Blue\ iPhone\ wallpaper\ wavy\ pattern\ design\ by\ Sasi\ about\ iphone\ wallpaper\,\ blue\ wallpaper\ iphone\,\ iphone\ wallpaper\ dark\,\ blue\ background\,\ and\ iphone\ wallpaper\ beach\ 4242307.jpeg);
 }
 
 /* ================= HERO SECTION ================= */
@@ -250,7 +250,6 @@ p {
 }
 
 .card-buttons {
-  
 }
 
 /* Intro Heading */
@@ -261,7 +260,7 @@ p {
   font-weight: 900;
   text-decoration: underline;
   margin-bottom: 0px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .intp {
@@ -269,7 +268,6 @@ p {
   margin: 0px;
   font-style: italic;
   font-size: 1.5vw;
-
 }
 
 /* CTA Button */
@@ -318,6 +316,11 @@ p {
   text-align: center;
   padding: 60px 20px; /* Spacing around section */
   background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.serviceimage {
+  height: 28rem;
+  width: 28rem;
 }
 
 .services h2 {
@@ -383,19 +386,18 @@ p {
 }
 
 .card1 {
-  background-image: url(/Media/tax\ gemini.png);
+  background-image: url(/Media/\(2\).jpeg);
 }
 
 .card2 {
-  background-image: url(/Media/manpower\ gemini.png);
+  background-image: url(/Media/\(2\).jpeg);
 }
 .card3 {
-  background-image: url(/Media/tution\ gemini.png);
+  background-image: url(/Media/\(2\).jpeg);
 }
 .card4 {
-  background-image: url(/Media/bihar\ tour.png);
+  background-image: url(/Media/\(2\).jpeg);
 }
-
 
 .card1:hover,
 .card2:hover,
@@ -494,7 +496,7 @@ p {
   flex-direction: column;
   color: #05315a;
   line-height: 1.5;
-  background-image: url(../Media/white.jpeg);
+  background-image: url(/Media/building.jpeg);
   border: 2px solid #05315a;
   text-align: center;
   object-fit: contain;
@@ -514,17 +516,10 @@ p {
 
 /* Vision/Mission/Values Icons */
 .visionary img {
-  height: 150px;
-  width: 150px;
+  height: 5rem;
+  width: 5rem;
   margin: 0 auto;
 }
-
-/*.super-services {
-  display: flex;
-  justify-content: center;
-  font-size: larger;
-  font-weight: bolder;
-} */
 
 /* Shared quote card style (use specific IDs if you need individual overrides) */
 .service-quote {
@@ -708,13 +703,14 @@ p {
 
 .footer-social {
   display: grid;
-  justify-content: left;
-  gap: 12px;
+  justify-content: center;
+  gap: 8px;
 }
 
 .footer-social img {
-  width: 28px;
-  height: 28px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 

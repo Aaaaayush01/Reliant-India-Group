@@ -1,35 +1,52 @@
 /* ===== Hero Section ===== */
-.Tax-hero {
-    display: flex;
-    justify-content: space-between;
-}
-
-.tax-herotext{
-    padding-right: 120px;
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-.tax-hero-content {
-  background-image: url(/Media/tax.jpg);
-  background-size: cover;
-  text-align: center;
-  width: 1200px;
-  height: auto;
+.tax-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  color: #2c3e50;
   border-radius: 0 0 2rem 2rem;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1000px;
 }
 
-.Tax-hero h1 {
+.tax-herotext {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.tax-herotext h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
-.overview {
-  font-size: 32px;
+.tax-herotext p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
+.tax-herotext .overview {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  color: #0d47a1;
+}
 
-/* Reusable button style */
+.taximg img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* Hero Buttons */
+.Hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .tax-btn, .tax-btn2 {
   display: inline-block;
   background: #ff7043;
@@ -38,46 +55,49 @@
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 500;
-  margin-top: 360px;
   transition: all 0.3s ease;
 }
 
-.tax-btn:hover, .tax-btn2:hover{
+.tax-btn:hover, .tax-btn2:hover {
   color: #ff5722;
-  background-color: white;
+  background-color: #fff;
   font-weight: bold;
 }
 
-/* ===== Section Layout ===== */
-section {
+/* ===== Service Cards Layout ===== */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
   max-width: 1000px;
   margin: 3rem auto;
   padding: 0 1.5rem;
 }
 
-.tax-service-overview,
-.tax-offerings,
-.tax-why-choose,
-.tax-process {
-  margin-bottom: 4rem;
+.service-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: left;
 }
 
-/* ===== Offerings & Why Choose Us ===== */
-.tax-offerings ul,
-.tax-why-choose ul {
-  list-style: none;
-  padding: 0;
+.service-card h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
-.tax-offerings li,
-.tax-why-choose li {
-  margin: 0.75rem 0;
+.service-card ul, .service-card ol {
   padding-left: 1.5rem;
+  margin: 0;
+}
+
+.service-card ul li, .service-card ol li {
+  margin: 0.75rem 0;
   position: relative;
 }
 
-.tax-offerings li::before,
-.tax-why-choose li::before {
+.service-card ul li::before {
   content: "✔";
   position: absolute;
   left: 0;
@@ -85,26 +105,11 @@ section {
   font-weight: bold;
 }
 
-/* ===== Process Section ===== */
-.tax-process ol {
-  padding-left: 1.5rem;
-}
-
-.tax-process li {
+.service-card ol li {
   margin: 0.5rem 0;
 }
 
-.tax-submit {
-  display: flex;
-  justify-content: center;
-}
-
-.tax-btn2 {
-  margin-top: 24px;
-  margin: 0 auto;
-}
-
-/* Tax & Accounting Form Styles */
+/* ===== Tax Form ===== */
 .tax-form-section {
   max-width: 700px;
   margin: 60px auto;

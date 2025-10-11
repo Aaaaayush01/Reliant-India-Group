@@ -1,11 +1,13 @@
 .hero-manpower {
-  background-image: url(/Media/Techno\ Lines\ Simple\ Blue\ Background.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
   color: #2c3e50;
-  text-align: center;
-  padding: 4rem 2rem;
   border-radius: 0 0 2rem 2rem;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1000px;
 }
 
 .hero-manpower h1 {
