@@ -1,71 +1,25 @@
-/* ===== Navbar Mobile ===== */
-@media (max-width: 600px) {
-  .card1,
-  .card2,
-  .card3 {
-    padding: 20px 15px;
-  }
-
-  .card1 h3,
-  .card2 h3,
-  .card3 h3 {
-    font-size: 1.2rem;
-  }
-
-  .card1 p,
-  .card2 p,
-  .card3 p {
-    font-size: 0.95rem;
-  }
-
-  .card1 .btn,
-  .card2 .btn,
-  .card3 .btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 900px) {
-  .visionary {
-    gap: 15px;
-  }
-
-  .vision,
-  .mission,
-  .values {
-    flex: 1 1 100%;
-  }
-
-  .visionary img {
-    height: 120px;
-    width: 120px;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .footer-social {
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 500px) {
-  #enquiry-section {
-    padding: 20px 10px;
-    margin: 20px 10px;
-  }
-
-  .enquiry-submit-btn {
-    padding: 12px;
-    font-size: 14px;
-  }
-}
 body {
-  font-size: clamp(14px, 1.5vw, 16px);
+  overflow-x: hidden;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.serviceimage {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+}
+.superrdiv {
+  background-size: cover;
+  background-position: center;
+}
+.navbar ul {
+  flex-wrap: wrap;
+}
+
 
 h1 {
   font-size: clamp(28px, 5vw, 42px);
@@ -73,43 +27,6 @@ h1 {
 
 h2 {
   font-size: clamp(22px, 4vw, 32px);
-}
-
-@media (max-width: 768px) {
-  .main-head {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .navbar li {
-    width: 100%;
-  }
-
-  .navbar a {
-    padding: 10px;
-  }
-
-  /* Dropdown always visible on mobile */
-  .has-dropdown:hover > .dropdown {
-    display: none;
-  }
-
-  .dropdown {
-    position: relative;
-    top: 0;
-    left: 0;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    width: 100%;
-  }
 }
 
 /* ================= GLOBAL STYLES ================= */
@@ -121,7 +38,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", "Roboto", sans-serif;
-  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -578,28 +494,6 @@ p {
   opacity: 0.95;
 }
 
-/* Responsive tweaks */
-@media (max-width: 680px) {
-  .service-quote {
-    padding: 0.9rem 1rem;
-    margin: 1.5rem 1rem;
-  }
-  .service-quote .quote-text {
-    font-size: 1rem;
-  }
-  .service-quote .quote-author {
-    font-size: 0.85rem;
-  }
-}
-
-/* Simple fade-up keyframes */
-@keyframes fadeInUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 /* ================= ENQUIRY FORM ================= */
 #enquiry-section {
   background: #f9f9f9;
@@ -815,187 +709,6 @@ h3 {
   font-size: clamp(18px, 3vw, 24px);
 }
 
-/* ---------- HEADER / NAVBAR MOBILE ---------- */
-@media (max-width: 768px) {
-  .main-head {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .navbar li {
-    width: 100%;
-  }
-
-  .navbar a {
-    padding: 10px 12px;
-    font-size: 16px;
-  }
-
-  /* Dropdown always hidden by hover */
-  .has-dropdown:hover > .dropdown {
-    display: none;
-  }
-
-  .dropdown {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-  }
-}
-
-/* ---------- HERO SECTION ---------- */
-@media (max-width: 680px) {
-  .superrdiv {
-    padding: 2rem 1rem;
-  }
-
-  .intro {
-    font-size: clamp(22px, 6vw, 32px);
-  }
-
-  .cta-12 {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .Main-btn {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-  }
-}
-
-/* ---------- SERVICES CARDS ---------- */
-@media (max-width: 600px) {
-  .services-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .card1,
-  .card2,
-  .card3 {
-    padding: 20px 15px;
-  }
-
-  .card1 h3,
-  .card2 h3,
-  .card3 h3 {
-    font-size: 1.2rem;
-  }
-
-  .card1 p,
-  .card2 p,
-  .card3 p {
-    font-size: 0.95rem;
-  }
-
-  .card1 .btn,
-  .card2 .btn,
-  .card3 .btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-}
-
-/* ---------- VISION / MISSION / VALUES ---------- */
-@media (max-width: 900px) {
-  .visionary {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .vision,
-  .mission,
-  .values {
-    flex: 1 1 100%;
-    padding: 20px 15px;
-  }
-
-  .visionary img {
-    height: 120px;
-    width: 120px;
-  }
-}
-
-/* ---------- FOOTER ---------- */
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .footer-social {
-    justify-content: flex-start;
-  }
-}
-
-/* ---------- FORMS ---------- */
-@media (max-width: 500px) {
-  #enquiry-section {
-    padding: 20px 10px;
-    margin: 20px 10px;
-  }
-
-  .enquiry-submit-btn {
-    padding: 12px;
-    font-size: 14px;
-  }
-}
-
-/* ---------- TAX / TUITION / EMPLOYER CARDS ---------- */
-@media (max-width: 768px) {
-  .Cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-}
-
-/* ---------- QUOTES ---------- */
-@media (max-width: 680px) {
-  .service-quote {
-    padding: 0.9rem 1rem;
-    margin: 1.5rem 1rem;
-  }
-
-  .service-quote .quote-text {
-    font-size: 1rem;
-  }
-
-  .service-quote .quote-author {
-    font-size: 0.85rem;
-  }
-}
-
-/* ---------- HERO BUTTONS / CTA ---------- */
-@media (max-width: 680px) {
-  .Hero-buttons {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .E-btn,
-  .J-btn {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    padding: 10px 0;
-  }
-}
-
 /* ===== Service Cards Layout ===== */
 .service-cards {
   display: grid;
@@ -1041,22 +754,236 @@ h3 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive adjustments */
+/* =================== MEDIA QUERIES =================== */
+
+/* ---------- Extra Small Devices (≤500px) ---------- */
+@media (max-width: 500px) {
+  #enquiry-section {
+    padding: 20px 10px;
+    margin: 20px 10px;
+  }
+
+  .enquiry-submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- Small Devices (≤600px) ---------- */
 @media (max-width: 600px) {
+  /* Service Cards */
+  .services-container,
   .service-cards {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
-  .service-card h3 {
-    font-size: 1.1rem;
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    padding: 20px 15px;
   }
 
-  .service-card li {
+  .card1 h3,
+  .card2 h3,
+  .card3 h3,
+  .card4 h3 {
+    font-size: 1.2rem;
+  }
+
+  .card1 p,
+  .card2 p,
+  .card3 p,
+  .card4 p {
     font-size: 0.95rem;
   }
 
-  .service-card a {
+  .card1 .btn,
+  .card2 .btn,
+  .card3 .btn,
+  .card4 .btn,
+  .card1 .btn2,
+  .card2 .btn2,
+  .card3 .btn2,
+  .card4 .btn2 {
     padding: 8px 16px;
     font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+}
+
+/* ---------- Medium Devices (≤680px) ---------- */
+@media (max-width: 680px) {
+  /* Hero Section */
+  .superrdiv {
+    padding: 2rem 1rem;
+  }
+
+  .intro {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .cta-12,
+  .Hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Main-btn,
+  .E-btn,
+  .J-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  /* Quotes */
+  .service-quote {
+    padding: 0.9rem 1rem;
+    margin: 1.5rem 1rem;
+  }
+
+  .service-quote .quote-text {
+    font-size: 1rem;
+  }
+
+  .service-quote .quote-author {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------- Medium-Large Devices (≤768px) ---------- */
+@media (max-width: 768px) {
+  /* Header / Navbar */
+  .main-head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  /* Dropdown */
+  .has-dropdown:hover > .dropdown {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  /* Tax / Tuition / Employer Cards */
+  .Cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* ---------- Large Devices (≤900px) ---------- */
+@media (max-width: 900px) {
+  /* Vision / Mission / Values */
+  .visionary {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vision,
+  .mission,
+  .values {
+    flex: 1 1 100%;
+    padding: 20px 15px;
+  }
+
+  .visionary img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+/* Simple fade-up keyframes */
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Common Hero & Image Responsiveness ===== */
+@media (max-width: 900px) {
+  /* Stack hero sections vertically */
+  .hero-manpower,
+  .tours-hero,
+  .tuition-hero,
+  .tax-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px; /* Optional: reduce padding on mobile */
+  }
+
+  /* Add spacing below text/content */
+  .hero-manpower > *,
+  .tours-herotext,
+  .tuition-herotext,
+  .tax-herotext {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  /* Make hero images fully responsive */
+  .hero-manpower img,
+  .Toursimg img,
+  .tuition-img img,
+  .taximg img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem; /* Keep rounded corners */
+  }
+
+  /* Adjust hero buttons spacing */
+  .Hero-buttons,
+  .Tours-btn,
+  .tuition-btn,
+  .tax-btn {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Main-about {
+    font-size: 1rem;
   }
 }

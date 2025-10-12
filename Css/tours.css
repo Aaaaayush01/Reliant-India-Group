@@ -154,18 +154,3 @@
 #toursFormSubmitBtn:hover {
   background: #c0392b;
 }
-
-/* ===== Responsive ===== */
-@media (max-width: 900px) {
-  .tours-hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  .tours-herotext {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  .Toursimg img {
-    max-width: 100%;
-  }
-}
