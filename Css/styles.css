@@ -151,7 +151,7 @@ p {
   padding: clamp(2rem, 5vw, 4rem) 1rem; /* use padding instead of fixed height */
   box-sizing: border-box;
   width: 100%;
-  background-image: url(/Media/Download\ premium\ image\ of\ Blue\ iPhone\ wallpaper\ wavy\ pattern\ design\ by\ Sasi\ about\ iphone\ wallpaper\,\ blue\ wallpaper\ iphone\,\ iphone\ wallpaper\ dark\,\ blue\ background\,\ and\ iphone\ wallpaper\ beach\ 4242307.jpeg);
+  background-image: url(/Media/\(2\).jpeg);
 }
 
 /* ================= HERO SECTION ================= */
@@ -183,7 +183,7 @@ p {
   color: #a42803;
   margin: 0px;
   font-style: italic;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 /* CTA Button */
@@ -215,17 +215,92 @@ p {
 
 /* 📦 Services Grid */
 .services-container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* responsive 1–3 columns */
-  gap: 20px;
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto; /* center the services section */
-  padding: 2rem 1rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  flex: 1 1 230px;
+  max-width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url(/Media/\(2\)1.jpeg);
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.card ul li {
+  margin: 6px 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btn, .btn2 {
+  padding: 8px 12px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn {
+  background: #0077ff;
+  color: #fff;
+}
+
+.btn2 {
+  background: #eaeaea;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
 }
 
 .services {
@@ -245,97 +320,8 @@ p {
   color: #333;
 }
 
-.card1 h3,
-.card2 h3,
-.card3 h3,
-.card4 h3 {
-  font-weight: 700; /* bold heading */
-  color: #fff; /* white for contrast */
-}
-
-.card1 li,
-.card2 li,
-.card3 li,
-.card4 li {
-  font-weight: 500; /* medium bold for body text */
-  color: #f1f1f1; /* softer white (less harsh) */
-  text-align: left;
-}
-
-/* 🎴 Individual Service Card */
-.card1,
-.card2,
-.card3,
-.card4 {
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-  width: 100%; /* let grid column control the card width */
-  box-sizing: border-box;
-  position: relative; /* NEW - so overlay knows where to sit */
-  overflow: hidden;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-.card1::before,
-.card2::before,
-.card3::before,
-.card4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* 0.4 = 40% dark */
-  z-index: 1;
-}
-
-/* make sure your text/icons/buttons stay above overlay */
-.card1 > *,
-.card2 > *,
-.card3 > *,
-.card4 > * {
-  position: relative;
-  z-index: 2;
-}
-
-.card1 {
-  background-image: url(/Media/\(2\).jpeg);
-}
-
-.card2 {
-  background-image: url(/Media/\(2\).jpeg);
-}
-.card3 {
-  background-image: url(/Media/\(2\).jpeg);
-}
-.card4 {
-  background-image: url(/Media/\(2\).jpeg);
-}
-
-.card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-}
-
-/* 🎯 Icon inside card */
-.card1 .icon,
-.card2 .icon,
-.card3 .icon,
-.card4 .icon {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
 /* 🔘 Buttons inside card */
-.card1 .btn,
-.card2 .btn,
-.card3 .btn,
-.card4 .btn {
+.card .btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -343,13 +329,10 @@ p {
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-.card1 .btn2,
-.card2 .btn2,
-.card3 .btn2,
-.card4 .btn2 {
+.card .btn2 {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -357,20 +340,14 @@ p {
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-.card1 .btn:hover,
-.card2 .btn:hover,
-.card3 .btn:hover,
-.card4 .btn:hover {
+.card .btn:hover {
   background: #003d99;
 }
 
-.card1 .btn2:hover,
-.card2 .btn2:hover,
-.card3 .btn2:hover,
-.card4 .btn2:hover {
+.card .btn2:hover {
   background: #a42803;
 }
 /* ================= ABOUT SECTION ================= */
@@ -391,6 +368,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #2c3e50;
+  margin-top: 2rem;
 }
 /* ================= VISION / MISSION / VALUES ================= */
 .visionary {
@@ -412,17 +390,23 @@ p {
   flex-direction: column;
   color: #05315a;
   line-height: 1.5;
-  background-image: url(/Media/building.jpeg);
+  background-image: url(/Media/skyyyyyyyyy.jpeg);
   border: 2px solid #05315a;
   text-align: center;
   object-fit: contain;
   flex: 1 1 300px; /* each card takes min 300px */
-
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
+
+.vision p,
+.mission p,
+.values p {
+  margin-top: 1.5rem;
+}
+
 
 .vision:hover,
 .mission:hover,
@@ -665,11 +649,14 @@ p {
 /* Bottom bar */
 .footer-bottom {
   margin-top: 30px;
-  border-top: 1px solid #444;
   padding-top: 15px;
   text-align: center;
-  font-size: 13px;
-  color: #aaa;
+}
+
+.footer-bottom p {
+  font-size: 18px;
+  font-size: 14px;
+  color:#f9a825;
 }
 
 .insta {
@@ -720,7 +707,6 @@ h3 {
 }
 
 .service-card {
-  background: #ffffff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -753,6 +739,168 @@ h3 {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
+.footer-bottom p:first-child {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+
+/* ===== HAPPY CUSTOMERS ===== */
+.happy-customers {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fc;
+}
+
+.happy-customers h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.happy-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  max-width: 300px;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  color: #0073e6;
+  font-size: 1rem;
+}
+
+/* ===== Happy Clients Auto-Scroll Section ===== */
+.clients {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9fbfd;
+  border-radius: 1.5rem;
+  margin: 3rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.clients h3 {
+  font-size: 2rem;
+  color: #0d47a1;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Slider Container */
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Logo Track Animation */
+.logo-track {
+  display: flex;
+  gap: 50px;
+  animation: scroll 30s linear infinite;
+  width: calc(250px * 12); /* adjust based on number of logos */
+}
+
+.logo-track img {
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo-track img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (optional) */
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .clients {
+    padding: 40px 10px;
+  }
+
+  .clients h3 {
+    font-size: 1.6rem;
+  }
+
+  .logo-track {
+    gap: 30px;
+    animation: scroll 20s linear infinite;
+  }
+
+  .logo-track img {
+    width: 100px;
+    padding: 8px 10px;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-card {
+    max-width: 90%;
+  }
+}
+
 
 /* =================== MEDIA QUERIES =================== */
 
@@ -948,7 +1096,6 @@ h3 {
   .tax-hero {
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px; /* Optional: reduce padding on mobile */
   }
 
   /* Add spacing below text/content */
@@ -958,17 +1105,6 @@ h3 {
   .tax-herotext {
     margin-bottom: 20px;
     padding: 0;
-  }
-
-  /* Make hero images fully responsive */
-  .hero-manpower img,
-  .Toursimg img,
-  .tuition-img img,
-  .taximg img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 1rem; /* Keep rounded corners */
   }
 
   /* Adjust hero buttons spacing */
@@ -985,5 +1121,28 @@ h3 {
 @media (max-width: 600px) {
   .Main-about {
     font-size: 1rem;
+  }
+}
+
+/* === Services layout fix: image above text === */
+.service {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+}
+
+.service .serviceimage{
+  width: 100%;
+  max-width: 1100px;
+  max-height: 20rem;
+  border-radius: 10px;
+}
+
+/* Optional: if you want better spacing on large screens */
+@media (min-width: 1024px) {
+  .service {
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
   }
 }
